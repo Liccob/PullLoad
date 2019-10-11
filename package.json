@@ -1,0 +1,15 @@
+{
+  "name": "react-native-pullload",
+  "version": "0.1.0",
+  "description": "a customized pull to load component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-natvie",
+    "pullload"
+  ],
+  "author": "Qili",
+  "license": "ISC"
+}
