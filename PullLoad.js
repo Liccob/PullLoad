@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   View,
   Text,
@@ -13,6 +14,14 @@ import {
 
 const { width, height } = Dimensions.get('window');
 export default class PullLoadView extends React.Component {
+	static propTypes = {
+        onEndReached: PropTypes.func,
+        device_styles: PropTypes.object, //设备相关信息
+    };
+    static defaultProps = {
+		device_styles: {nav_height:0},
+        onEndReached: ()=> {}
+    };
   constructor(props) {
     super(props);
 
