@@ -96,7 +96,7 @@ export default class PullLoadView extends React.Component {
           toValue: 0,
           duration: 330,
           easing: Easing.ease,
-          // useNativeDriver:true
+          useNativeDriver:true
         }),
         Animated.timing(this.x, {
           toValue: (width * 2) / 3,
@@ -208,8 +208,11 @@ export default class PullLoadView extends React.Component {
             backgroundColor: '#f4f4f4',
             width: width,
             height: height + 50 - device_styles.nav_height,
-            top: this.y,
+            top:0,
             justifyContent: 'center'
+          },
+          {
+            transform: [{translateY:this.y}]
           }
         ]}
       >
